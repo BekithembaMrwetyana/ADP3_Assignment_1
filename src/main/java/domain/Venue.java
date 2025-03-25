@@ -1,18 +1,18 @@
 package domain;
 
 public class Venue {
-    private final String venueID; // Primary Key
+    private final String venueID; 
     private final String name;
     private final String address;
 
-    // Private constructor to enforce the use of the Builder
+    
     private Venue(Builder builder) {
         this.venueID = builder.venueID;
         this.name = builder.name;
         this.address = builder.address;
     }
 
-    // Getters
+    
     public String getVenueID() {
         return venueID;
     }
