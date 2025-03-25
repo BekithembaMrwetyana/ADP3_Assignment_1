@@ -1,4 +1,4 @@
-package domain;
+package za.ac.cput.domain;
 
 import java.time.LocalDate;
 
@@ -65,7 +65,7 @@ public class Event {
                 '}';
     }
 
-    public static class Builder{
+    public static class Builder {
 
         private String eventID;
         private String name;
@@ -108,11 +108,11 @@ public class Event {
             return this;
         }
 
-        public Builder copy(Event event){
+        public Builder copy(Event event) {
             return this;
         }
 
-        public Event build(){
+        public Event build() {
             return new Event(this);
         }
 
