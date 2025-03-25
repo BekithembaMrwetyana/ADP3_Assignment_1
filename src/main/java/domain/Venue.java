@@ -25,7 +25,7 @@ public class Venue {
         return address;
     }
 
-    // Builder Pattern
+    
     public static class Builder {
         private String venueID;
         private String name;
