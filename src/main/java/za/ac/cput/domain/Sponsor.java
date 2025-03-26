@@ -14,6 +14,7 @@ public class Sponsor {
     private double contributionAmount;
 
     private Sponsor() {
+
     }
 
 
