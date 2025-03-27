@@ -1,5 +1,7 @@
 package domain;
 
+import util.TicketHelper; // Import the helper class
+
 public class Ticket {
     private int ticketId;
     private int eventId;
@@ -25,18 +27,13 @@ public class Ticket {
         return participantId;
     }
 
-    @Override
-    public String toString() {
-        return "Ticket{" +
-                "ticketId=" + ticketId +
-                ", eventId=" + eventId +
-                ", participantId='" + participantId + '\'' +
-                ", price=" + price +
-                '}';
-    }
-
     public double getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return TicketHelper.formatTicketDetails(ticketId, eventId, participantId, price);
     }
 
     public static class Builder {
@@ -66,6 +63,19 @@ public class Ticket {
         }
 
         public Ticket build() {
+            // Validation using TicketHelper
+            if (!TicketHelper.isValidPrice(price)) {
+                throw new IllegalArgumentException("Price must be greater than 0.");
+            }
+            if (!TicketHelper.isValidParticipantId(participantId)) {
+                throw new IllegalArgumentException("Participant ID cannot be empty.");
+            }
+
+            // Generate a unique ticket ID if not set
+            if (ticketId == 0) {
+                ticketId = TicketHelper.generateTicketId();
+            }
+
             return new Ticket(this);
         }
     }
