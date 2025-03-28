@@ -1,4 +1,4 @@
-package repository.impl;
+package repository;
   /*
  SponsorRepositoryTest.java
  SponsorRepsitoryTest model class
@@ -8,12 +8,15 @@ package repository.impl;
 
 import domain.Sponsor;
 import factory.SponsorFactory;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import repository.ISponsorRepository;
+import repository.impl.SponsorRepository;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class SponsorRepositoryTest {
 private static ISponsorRepository repository = SponsorRepository.getRepository();
