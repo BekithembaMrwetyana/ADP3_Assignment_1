@@ -11,6 +11,7 @@ import domain.Organizer;
 import static util.Helper.*;
 
 
+
 public class OrganizerFactory {
 
     public static Organizer createOrganizer(String organizerID, String name, String contactinfo) {
