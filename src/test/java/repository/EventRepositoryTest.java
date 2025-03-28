@@ -3,7 +3,7 @@ package repository;
 /*
 EventRepositoryTest.java
 Repository test case for the Event
-Author: Bekithemba Mrwetyana (222707077)
+Author: Bekithemba Mrwetyana (222706066)
 Date: 24 March 2025
 */
 
@@ -23,7 +23,7 @@ public class EventRepositoryTest {
     @BeforeEach
     void setUp() {
         repository = EventRepository.getInstance();
-        event = EventFactory.createEvent("Tech Conference", LocalDate.of(2025, 5, 20), "Cape Town");
+        event = EventFactory.createEvent("", "Tech Conference",LocalDate.of(2025, 5, 20), "Cape Town");
         repository.create(event);
     }
 
@@ -59,4 +59,3 @@ public class EventRepositoryTest {
         assertNull(repository.read(event.getEventID()));
     }
 }
-

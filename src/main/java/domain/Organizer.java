@@ -1,3 +1,7 @@
+/* Organizer builder class
+Author: Abethu Ngxitho (221297820)
+Date: 26/03/2025
+ */
 package domain;
 
 public class Organizer {
@@ -14,6 +18,11 @@ public class Organizer {
         this.name = builder.name;
         this.contactInfo = builder.contactInfo;
     }
+
+    public static boolean isNullOrEmpty(String organizerID) {
+        return false;
+    }
+
     public String getOrganizerID() {
 
         return organizerID;
