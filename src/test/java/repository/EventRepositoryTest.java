@@ -3,7 +3,7 @@ package repository;
 /*
 EventRepositoryTest.java
 Repository test case for the Event
-Author: Bekithemba Mrwetyana (222707077)
+Author: Bekithemba Mrwetyana (222706066)
 Date: 24 March 2025
 */
 
