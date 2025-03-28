@@ -8,7 +8,7 @@ import domain.Venue;
 
 public class VenueFactory {
     public static Venue createVenue(String venueID, String name, String address) {
-        // Validate input parameters
+
         if (venueID == null || venueID.isEmpty()) {
             throw new IllegalArgumentException("Venue ID must be provided and cannot be empty!");
         }

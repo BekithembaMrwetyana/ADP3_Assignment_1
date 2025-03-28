@@ -5,7 +5,6 @@ package factory;
    Date: 27 March 2025
 */
 import domain.Venue;
-import factory.VenueFactory;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
