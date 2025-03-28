@@ -1,7 +1,7 @@
 package util;
    /*
-Sponsor.java
-Sponsor model class
+Helper.java
+Helper model class
 Author : Thandolwethu p Mseleku(223162477)
 Date:25 March 2025
  */
