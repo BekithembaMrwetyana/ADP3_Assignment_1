@@ -78,8 +78,19 @@ public class Ticket {
             return this;
         }
 
+        public Builder(int ticketId) {
+            this.ticketId = ticketId;
+        }
+
+        public Builder() {
+        }
+
         public Ticket build() {
             return new Ticket(this);
+        }
+
+        public Builder copy(Ticket ticket) {
+            return null;
         }
     }
 }
