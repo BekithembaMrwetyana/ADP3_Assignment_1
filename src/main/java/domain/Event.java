@@ -3,7 +3,7 @@ package domain;
 Event.java
 Event model class
 Author: Bekithemba Mrwetyana (222707077)
-Date: 14 March 2025
+Date: 24 March 2025
 */
 import java.time.LocalDate;
 
@@ -77,17 +77,9 @@ public class Event {
         private LocalDate date;
         private String location;
 
-        public String getEventID() {
-            return eventID;
-        }
-
         public Builder setEventID(String eventID) {
             this.eventID = eventID;
             return this;
-        }
-
-        public String getName() {
-            return name;
         }
 
         public Builder setName(String name) {
@@ -95,17 +87,9 @@ public class Event {
             return this;
         }
 
-        public LocalDate getDate() {
-            return date;
-        }
-
         public Builder setDate(LocalDate date) {
             this.date = date;
             return this;
-        }
-
-        public String getLocation() {
-            return location;
         }
 
         public Builder setLocation(String location) {
