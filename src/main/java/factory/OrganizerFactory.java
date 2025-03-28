@@ -5,10 +5,10 @@ Date: 26/03/2025
 
 
 package factory;
-import Helper.Helper;
+import util.Helper;
 import domain.Organizer;
 
-import static Helper.Helper.*;
+import static util.Helper.*;
 
 
 public class OrganizerFactory {
