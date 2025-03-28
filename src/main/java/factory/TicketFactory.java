@@ -1,6 +1,7 @@
 package factory;
 
 import domain.Ticket;
+import util.Helper;
 
 public class TicketFactory {
     public static Ticket createTicket(int ticketId, int eventId, String participantId, String venueId, double price) {
