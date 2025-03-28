@@ -40,5 +40,9 @@ public class ParticipantRepository implements IParticipantRepository<Participant
     public boolean delete(String id) {
         return participantMap.remove(id) != null;
     }
-}
 
+
+    public Map<String, Participant> getAll() {
+        return new HashMap<>(participantMap); // Return a copy to avoid direct modification
+    }
+}
